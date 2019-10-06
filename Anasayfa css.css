@@ -1,0 +1,331 @@
+body {
+
+    background-image: url(img/stars_preview.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+/* PARALLAX*/
+
+/*kar efekti*/
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes snowflakes-shake {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px)
+    }
+    50% {
+        transform: translateX(80px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s
+}
+
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay: 6s, .5s
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s
+}
+
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s
+}
+
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s
+}
+
+.kıs {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.kıs a {
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+
+
+/*navbar */
+.ayaz {
+    background-color: black;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center; /*navbar bölümü*/
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar-brand > img {
+    margin: 50px;
+    height: 30px;
+    margin-top: -43px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+/*Kayıt Yeri*/
+* {
+    box-sizing: border-box
+}
+
+form {
+    max-width: 450px;
+
+    margin: 10px 20px 10px 20px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea
+select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 5px;
+    width: 100%;
+    background-color: #e8eaea;
+    color: gray;
+    box-shadow: 0 1px 0 rgb(0, 0, 0.03) inset;
+    margin-bottom: 15px;
+
+
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+fieldset {
+    margin-bottom: 10px;
+    border: none;
+}
+
+legend {
+    display: block;
+    margin-bottom: 50px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 12px 15px 12px 15px;
+}
+
+@media screen and (min-width: 480px) {
+    form {
+        max-width: 480px;
+    }
+
+}
+
+.h1-buyuk {
+    color: white;
+}
+
+.btn-primary {
+    margin: 10px auto;
+}
+
+.girisyazısı {
+    color: white;
+    margin-left: 20px;
+
+
+}
+
+
+.text-gelecek {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.girisyazi {
+    margin-top: 20px;
+    color: white;
+}
+
+.toplam {
+    background-color: hsla(202, 50%, 6%, 1)
+
+}
+
+
+.toplam2 {
+    background-color: white;
+
+
+
+}
+
+
+.kangal1{
+    display: inline-block;
+    float: left;
+
+}
+.kangal2{
+    display: inline-block;
+    margin-left: 110px;
+
+}
+.kangal3{
+    display: inline-block;
+    margin-left: 140px;
+
+}
+
+
+.page-footer{
+    background-color: hsla(202, 50%, 6%, 1);
+    color: whitesmoke;
+    margin-top: 3px;
+}
+.footerikon{
+
+    text-align: center;
+
+}
+.footerikon>a{
+    text-decoration: none;
+    color: gray;
+}

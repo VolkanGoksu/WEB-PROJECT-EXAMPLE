@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="kayıt%20ol.css"/>
+    <link rel="stylesheet" href="Animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kayıt Ol</title>
+
+</head>
+<body>
+
+
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+        ❅
+    </div>
+    <div class="snowflake">
+        ❅
+    </div>
+    <div class="snowflake">
+        ❆
+    </div>
+    <div class="snowflake">
+        ❄
+    </div>
+    <div class="snowflake">
+        ❅
+    </div>
+    <div class="snowflake">
+        ❆
+    </div>
+    <div class="snowflake">
+        ❄
+    </div>
+    <div class="snowflake">
+        ❅
+    </div>
+    <div class="snowflake">
+        ❆
+    </div>
+    <div class="snowflake">
+        ❄
+    </div>
+</div>
+
+
+
+<div class="topnav" id="myTopnav">
+
+    <li><a href="Kayıt%20ol.html">Kayıt Ol</a>
+        <a href="#news">API</a>
+        <a href="sozlesme.html">Sözleşme</a>
+        <a href="Anasayfa%20Takipçi.html">Giriş</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+</div>
+
+<a class="navbar-brand" href="/">
+    <img src="" alt="LOGONUZ" title>
+</a>
+<div class="container ">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="well">
+                <form action method="post">
+                    <h4 style="text-align: center;color: white">
+                        Kayıt Ol
+                    </h4>
+                    <div class="form-group " style="color: white"><br>
+                        <label for="username" class="control-label">Kullanıcı Adı</label>
+                        <input type="text" class="form-control" id="username" value name="RegistrationForm[login]">
+                        <div class="form-group">
+                            <label for="firstname" class="control-label">Adınız</label>
+                            <input type="text" class="form-control" id="firstname" value
+                                   name="RegistrationForm[first_name]">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="control-label">Soyadınız</label>
+                            <input type="text" class="form-control" id="lastname" value
+                                   name="RegistrationForm[last_name]">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label">E-posta Adresiniz</label>
+                            <input type="email" class="form-control" id="email" value name="RegistrationForm[email]">
+                        </div>
+                        <div class="form-group">
+                            <label for="skype" class="control-label">Telefon Numaranız</label>
+                            <input type="text" class="form-control" id="skype" value name="RegistrationForm[skype]">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="control-label">Şifre</label>
+                            <input type="password" class="form-control" id="password" name="RegistrationForm[password]">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm" class="control-label">Şifreyi Tekrarla</label>
+                            <input type="password" class="form-control" id="confirm"
+                                   name="RegistrationForm[password_again]">
+                        </div>
+                        <div class="g-recaptcha form-group" data-sitekey="6LeQyxkUAAAAACZsRNUpGI-5rw7ifdLgP0mUyE4O">
+                            <div style="width: 304px; height: 78px;">
+                                <div>
+                                    <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeQyxkUAAAAACZsR…uY29tOjQ0Mw..&hl=tr&v=Zb8ryxVmOYe96SLQBgaur9Ke&size=normal&cb=uga8ew8hjwzn"
+                                            width="304" height="78" role="presentation" name="a-ierboep30w2v"
+                                            frameborder="0" scrolling="no"
+                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">
+                                    </iframe>
+                                    <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                              class="g-recaptcha-response"
+                                              style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="accept_terms_text" class="terms-accept-checkbox"
+                                               name="RegistrationForm[termsofservice]">
+                                        <label class="checkbox" for="accept_terms_text">
+                                            Kullanıcı Sözleşmesini okudum ve girmiş olduğum bilgilerin doğruluğunu kabul
+                                            ediyorum.
+
+                                            <br>
+                                            <a href="/sozlesme" target="_blank">Kullanıcı Sözleşmesi 'ni okumak için
+                                                buraya tıklayınız.</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="_csrf"
+                                       value="pJyW0uX9KHwCCczkQiH3K3cqY9n9dkYPDijjlGt2GVboqNe8gcoZLVJju6sqaLtDH14Mn88sF1pneJbhLUBSMA==">
+                                <button type="submit" class="btn btn-primary">Kayıt ol</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- grid row -->
+        <div class="row">
+
+
+            <div class="col-md-6 mt-md-0 mt-3 " style="text-align: center">
+
+
+                <h5 class="text-uppercase " style="text-align: center">HAKKIMIZDA</h5>
+                <p>Volkan GÖKSUve Serhat Potur Tarafından Yapılmıştır.</p>
+
+            </div>
+
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+
+            <div class="col-md-3 mb-md-0 mb-3">
+
+
+                <h5 class="text-uppercase">Sosyal Medya Hesaplarımız</h5>
+
+
+                <div class="footerikon">
+
+                    <a href=<a href="http://facebook.com/">
+                        <link class="fa fa-facebook mx-2">
+                    </a>
+                    <a href="http://twitter.com/">
+                        <link class="fa fa-twitter mx-2">
+                    </a>
+                    <a href="http://instagram.com/vsyazilim">
+                        <link class="fa fa-instagram mx-2">
+                    </a>
+
+
+                </div>
+
+
+
+            </div>
+
+        <div class="footer-copyright text-center py-3 ">© 2019 Tüm Hakları Saklıdır<br>
+            <a href="https://mdbootstrap.com/education/bootstrap/">VS Yazılım.com</a>
+        </div>
+
+
+
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
